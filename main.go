@@ -19,7 +19,7 @@ func main() {
 
 	plugin.Serve(&plugin.ServeOpts{
 		Debug:        debug,
-		ProviderAddr: "contabo/contabo",
+		ProviderAddr: "loic-roux-404/contabo",
 		ProviderFunc: func() *schema.Provider {
 			return contabo.Provider()
 		},
