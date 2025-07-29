@@ -1,3 +1,4 @@
+version: 2
 project_name: terraform-provider-contabo
 before:
   hooks:
@@ -48,7 +49,7 @@ signs:
       - "--detach-sign"
       - "${artifact}"
 changelog:
-  skip: true
+  disable: true
 release:
   github:
     owner: contabo
