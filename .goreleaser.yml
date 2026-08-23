@@ -32,7 +32,11 @@ builds:
     - goos: freebsd
       goarch: arm
     - goos: freebsd
-      goarch: admd64
+      goarch: amd64
+    - goos: windows
+      goarch: arm64
+    - goos: windows
+      goarch: '386'
   binary: '{{ .ProjectName }}_v{{ .Version }}'
 archives:
   - name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
